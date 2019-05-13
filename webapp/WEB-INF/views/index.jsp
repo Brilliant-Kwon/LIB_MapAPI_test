@@ -14,5 +14,6 @@
 <a href="<%= request.getContextPath()%>/map_w3w">4.마커 -> w3w</a><br>
 <a href="<%= request.getContextPath()%>/map_control">5.마커 컨트롤 추가</a><br>
 <a href="<%= request.getContextPath()%>/map_geo">6.geolocation 추가</a><br>
+<h3>pull test</h3>
 </body>
 </html>
