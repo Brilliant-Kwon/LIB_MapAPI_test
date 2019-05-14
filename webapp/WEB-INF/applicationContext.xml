@@ -20,12 +20,27 @@
 	</context:component-scan>
 	
 	<!--Oracle DataSource를 bean으로 등록-->
-    <bean id="oracleDatasource" class="oracle.jdbc.pool.OracleDataSource" destroy-method="close">
+    <!-- <bean id="oracleDatasource" class="oracle.jdbc.pool.OracleDataSource" destroy-method="close">
         <property name="URL" value="jdbc:oracle:thin:@Localhost:1521:xe"/>
         <property name="user" value="jblog"/>
         <property name="password" value="jblog"/>
         <property name="connectionCachingEnabled" value="true"/>
         <qualifier value="main-db"/>
+    </bean> -->
+    
+    <!-- MariaDB datasource -->
+    <bean id="dataSource" class="org.springframework.jdbc.datasource.SimpleDriverDataSource">
+    	<property name="driverClass" value="org.mariadb.jdbc.Driver"></property>
+    	<!-- 3306 뒷쪽에 db명 -->
+    	<property name="url" value="jdbc:mariadb://localhost:3306/libtest"></property>
+    	<!-- 계정명, 비밀번호 -->
+    	<property name="username" value="bituser"></property>
+    	<property name="password" value="bituser"></property>
     </bean>
+    
+    <!-- TODO -->
+    <!-- 아래 sqlsessionfactory 및 sqlsession bean 생성 해주어야 한다 -->
+    
+    
 
 </beans>
