@@ -1,1 +1,7 @@
+### Java-Web ###
+## ignoring target file
 target/
+
+### m2e ###
+.classpath
+.project
