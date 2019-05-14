@@ -67,4 +67,10 @@ public class MainController {
 	public String DaumMap_geo() {
 		return "map_daum_geo";
 	}
+	
+	//마커 이미지 추가
+	@RequestMapping("/map_image")
+	public String DaumMap_image() {
+		return "map_daum_image";
+	}
 }
