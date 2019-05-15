@@ -73,7 +73,6 @@
 			//이미지 옵션 / 마커의 좌표와 일치시킬 이미지 내 좌표 설정
 			imageOption = {offset: new daum.maps.Point(27,69)};
 		var markerImage;
-		var markerPosition;
 		
 		//----------geolocation---------------------------------------------
 		// geolocation 사용 가능 여부 확인

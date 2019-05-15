@@ -73,4 +73,28 @@ public class MainController {
 	public String DaumMap_image() {
 		return "map_daum_image";
 	}
+	
+	//다중 마커
+	@RequestMapping("/map_image_multi")
+	public String DaumMap_image_multi() {
+		return "map_daum_image_multi";
+	}
+	
+	//보이기 감추기, 마커 배열
+	@RequestMapping("/map_hide")
+	public String DaumMap_hide() {
+		return "map_daum_hide";
+	}
+	
+	// 마우스오버 시 주소 출력
+	@RequestMapping("/map_mouseover")
+	public String DaumMap_mouseover() {
+		return "map_daum_mouseover";
+	}
+	
+	// 마우스오버 시 확대
+	@RequestMapping("/map_mouseover2")
+	public String DaumMap_mouseover2() {
+		return "map_daum_mouseover2";
+	}
 }

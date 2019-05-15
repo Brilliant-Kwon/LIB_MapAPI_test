@@ -22,5 +22,13 @@
 	<br>
 	<a href="<%=request.getContextPath()%>/map_image">7.마커에 이미지 추가</a>
 	<br>
+	<a href="<%=request.getContextPath()%>/map_image_multi">8.마커 다중 출력 </a>
+	<br>
+	<a href="<%=request.getContextPath()%>/map_hide">9.마커 감추기 버튼 추가</a>
+	<br>
+	<a href="<%=request.getContextPath()%>/map_mouseover">10.마우스오버 시 3단어 주소 출력</a>
+	<br>
+	<a href="<%=request.getContextPath()%>/map_mouseover2">11.마우스오버 시 확대</a>
+	<br>
 </body>
 </html>
